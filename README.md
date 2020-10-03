@@ -3,9 +3,6 @@
 - 🌱 I’m currently learning Web Development Technologies.
 - 👯 I’m looking to collaborate on Front End Web Development Projects.
 - 📫 How to reach me: Ping me on [Telegram](https://t.me/hadron43)!
-- ⚡ Fun fact:
-```sh
-sudo rm -r exMem
-```
+- ⚡ Fun fact: `sudo rm -r exMem`
 
 ![Github stats](https://github-readme-stats.vercel.app/api?username=hadron43)
