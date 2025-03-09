@@ -39,10 +39,12 @@ export const POST = async (req: Request) => {
       });
     }
 
-    await collection.updateOne(
-      { _id: secret._id },
-      { $set: { deleted: true } }
-    );
+    if (secret.viewOnce) {
+      await collection.updateOne(
+        { _id: secret._id },
+        { $set: { deleted: false } }
+      );
+    }
 
     return new Response(
       JSON.stringify({
