@@ -42,13 +42,13 @@ export const POST = async (req: Request) => {
     if (secret.viewOnce) {
       await collection.updateOne(
         { _id: secret._id },
-        { $set: { deleted: false } }
+        { $set: { deleted: true } }
       );
     }
 
     return new Response(
       JSON.stringify({
-        message: "Secret deleted successfully",
+        message: "Secret retrieved successfully",
         secret: secret,
       }),
       {
