@@ -194,9 +194,7 @@ export default function UrlShortener() {
                   <div className="flex items-center justify-between break-all">
                     {createdUrl.targetUrl}
                     <button
-                      onClick={() =>
-                        copyToClipboard(`${baseUrl}${createdUrl.targetUrl}`)
-                      }
+                      onClick={() => copyToClipboard(`${createdUrl.targetUrl}`)}
                       className="ml-4 bg-indigo-600 hover:bg-indigo-700 px-4 py-1 rounded-md text-sm flex-shrink-0"
                     >
                       Copy
